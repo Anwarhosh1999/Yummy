@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Yummy</title>
+    <meta content=" Yummy Website for Yummy food recipes" name="description" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- ===== Font Awesome Icon Library ===== -->
+    <link rel="stylesheet" href="assets/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+
+    <!-- Favicons -->
+    <link href="assets/img/logo.png" rel="icon" />
+    <link href="assets/img/logo.png" />
+
+    <!-- bootstrap CSS Files -->
+    <link href="assets/bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ====== Preloader ======  -->
+    <div class="preloader" id="preloader">
+        <div class="coffee" role="img" aria-label="Coffee cup spinning and stretching from side to side">
+            <div class="coffee__cup">
+                <div class="coffee__cup-part coffee__cup-part--a"></div>
+                <div class="coffee__cup-part coffee__cup-part--b"></div>
+                <div class="coffee__cup-part coffee__cup-part--c"></div>
+                <div class="coffee__cup-part coffee__cup-part--d"></div>
+                <div class="coffee__cup-part coffee__cup-part--e"></div>
+                <svg class="coffee__cup-part coffee__cup-part--f" width="96px" height="60px" viewBox="0 0 96 60"
+                    aria-hidden="true">
+                    <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                        <path class="coffee__cup-handle"
+                            d="M64,4.413s6.64-2.913,11-2.913c11.739,0,19.5,10.759,19.5,22.497,0,23.475-45,22.497-45,22.497" />
+                    </g>
+                </svg>
+            </div>
+            <svg class="coffee__steam" width="56px" height="56px" viewBox="0 0 56 56" aria-hidden="true">
+                <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                    <path class="coffee__steam-part coffee__steam-part--a"
+                        d="M13.845,54s-5.62-10.115-4.496-16.859,6.83-11.497,8.992-17.983c1.037-3.11,.161-6.937-1.083-10.158" />
+                    <path class="coffee__steam-part coffee__steam-part--b"
+                        d="M27.844,54s-5.652-10.174-4.522-16.957,6.869-11.564,9.043-18.087c2.261-6.783-4.522-16.957-4.522-16.957" />
+                    <path class="coffee__steam-part coffee__steam-part--c"
+                        d="M40.434,50.999c-1.577-3.486-3.818-9.462-3.071-13.944,1.121-6.723,6.809-11.462,8.964-17.928,1.033-3.1,.161-6.916-1.08-10.127" />
+                </g>
+            </svg>
+            <svg class="coffee__steam coffee__steam--right" width="56px" height="56px" viewBox="0 0 56 56"
+                aria-hidden="true">
+                <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                    <path class="coffee__steam-part coffee__steam-part--d"
+                        d="M19.845,54s-5.62-10.115-4.496-16.859,6.83-11.497,8.992-17.983c1.037-3.11,.161-6.937-1.083-10.158" />
+                    <path class="coffee__steam-part coffee__steam-part--e"
+                        d="M34.434,44c-1.577-3.486-3.818-9.462-3.071-13.944,1.121-6.723,6.809-11.462,8.964-17.928,1.033-3.1,.161-6.916-1.08-10.127" />
+                </g>
+            </svg>
+        </div>
+    </div>
+    <div class=" preloader inner" style="display: none;">
+        <div class="inner-loading-screen">
+            <div class="innerflex">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+                <div class="line line-4"></div>
+                <div class="line line-5"></div>
+            </div>
+        </div>
+    </div>
+    <!-- ======End Preloader ======  -->
+
+    <!-- ====== Home ======  -->
+
+    <div class="demo">
+        <span>L</span>
+        <span>E</span>
+        <span>T</span>
+        <span>'S</span>
+        <span>C</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        <span>!</span>
+        <span>!</span>
+    </div>
+
+    <div class="SearchGroup " style="display: none;">
+        <div class="container">
+            <div class="row">
+
+                <div class="cardunit col-md-6 ">
+                    <input onkeyup="searchByName(this.value)" class="form-control searchInputs" type="text"
+                        placeholder="Search By Name">
+                </div>
+                <div class="cardunit col-md-6 ">
+                    <input onkeyup="searchByFLetter(this.value)" maxlength="1" class="form-control searchInputs"
+                        type="text" placeholder="Search By First Letter">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <div>
+        <div class="container">
+            <div class="row para">
+
+            </div>
+        </div>
+    </div> -->
+
+    <div class="cardsGroup ">
+        <div class="container">
+            <div class="row" id="cardsGroup">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="ContactGroup" style="display: none;">
+        <div class="container">
+            <div class="row">
+
+                <div class="cardunit col-md-6 ">
+                    <input id="nameInput" onkeyup="inputsValidation(); nameIsValid()" type="text"
+                        class="form-control contactinputs" placeholder="Enter Your Name">
+                </div>
+                <div class="cardunit col-md-6 ">
+                    <input id="emailInput" onkeyup="inputsValidation(); emailIsValid()" type="email"
+                        class="form-control contactinputs " placeholder="Enter Your Email">
+                </div>
+                <div class="cardunit col-md-6 ">
+                    <input id="phoneInput" onkeyup="inputsValidation(); phoneIsValid()" type="number"
+                        class="form-control contactinputs " placeholder="Enter Your Phone">
+                </div>
+                <div class="cardunit col-md-6 ">
+                    <input type="text" onkeyup="inputsValidation() ; subjectIsValid()"
+                        class="form-control contactinputs" name="subject" id="subject" placeholder="Subject"
+                        required="">
+                </div>
+                <div class="cardunit col-md-12 ">
+                    <textarea type="text" class="form-control contactinputs"
+                        onkeyup="inputsValidation() ; subjectIsValid()" name="message" rows="5" placeholder="Message"
+                        required="" id="message"></textarea>
+                    <div id="messageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                        Enter valid message
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button class="card-btn" id="submitBtn" onclick="submit()" disabled>
+                        <p>Submit</p>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ====== sideNav ======  -->
+    <div class="side-nav-menu vh-100 position-fixed d-flex top-0">
+        <div class="nav-tab  d-flex flex-column justify-content-between vh-100 ">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li onclick="showSearchInputs(); closeSideNav(); hideContacts(); topFunction()"
+                        class=" position-relative cursor-pointer custom-cursor-on-hover" style="top: 300px;">Search
+                    </li>
+                    <li onclick="getCategories(); closeSideNav(); hideSearchInputs(); hideContacts(); topFunction()"
+                        class=" position-relative cursor-pointer custom-cursor-on-hover" style="top: 300px;">
+                        Categories
+                    </li>
+                    <li onclick="getArea(); closeSideNav();hideSearchInputs(); hideContacts(); topFunction()"
+                        class=" position-relative cursor-pointer custom-cursor-on-hover" style="top: 300px;">Area
+                    </li>
+                    <li onclick="getIngredients(); closeSideNav();hideSearchInputs(); hideContacts(); topFunction()"
+                        class=" position-relative cursor-pointer custom-cursor-on-hover" style="top: 300px;">
+                        Ingredients
+                    </li>
+                    <li onclick="showContacts(); closeSideNav(); hideSearchInputs(); topFunction()"
+                        class=" position-relative cursor-pointer custom-cursor-on-hover" style="top: 300px;">Contact
+                        Us
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons d-flex justify-content-between">
+                    <i class="fa-brands fa-facebook" style="font-size: 30px"></i>
+                    <i class=" fa-brands fa-twitter" style="font-size: 30px"></i>
+                    <i class="fa-solid fa-globe" style="font-size: 30px"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright © 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="nav-header d-flex flex-column justify-content-between vh-100 align-items-center text-center bg-white text-black">
+            <img class="logo" src="assets/img/logo.png" alt=""
+                onclick="startSearch('') ; closeSideNav(); hideSearchInputs(); hideContacts()">
+            <div class="open-close-icon open"><i class="fa-solid open-close-icon fa-align-justify fa-2x"></i></div>
+            <div class="open-close-icon close " style="display: none;" onclick=" closeSideNav()"><i
+                    class="fa-solid open-close-icon fa-2x custom-cursor-on-hover fa-x"></i></div>
+            <div class="social-iconsss">
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== count ======  -->
+
+    <!-- ====== contact-us ======  -->
+
+
+
+    <!-- javaScript Files -->
+    <script src="assets/bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/JQuery.js"></script>
+    <script src="assets/main.js"></script>
+
+</body>
+
+
+</html>

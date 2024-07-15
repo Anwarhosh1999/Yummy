@@ -7,7 +7,7 @@
 
 $(document).ready(() => {
   startSearch("").then(() => {
-    $("#preloader").fadeOut(1000);
+    $("#preloader").fadeOut(2000);
   });
 });
 
@@ -33,11 +33,14 @@ function closeSideNav() {
 }
 
 async function startSearch(meal) {
+  $(".inner").fadeIn(0);
+
   let response = await fetch(
     `https://www.themealdb.com/api/json/v1/1/search.php?s=${meal}`
   );
   response = await response.json();
   displayMeals(response.meals);
+  $(".inner").fadeOut(1000);
 }
 
 function displayMeals(arr) {

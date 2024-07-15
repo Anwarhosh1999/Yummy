@@ -8,13 +8,10 @@
 $(document).ready(() => {
   startSearch("").then(() => {
     $("#preloader").fadeOut(1000);
-    // $("body").css("overflow", "visible");
   });
 });
 
 // ------------------------------------------------ Selectors
-// let sideNavWidth = $(".nav-tab").innerWidth();
-// let bodyWidth = $("body").innerWidth();
 
 function topFunction() {
   document.body.scrollTop = 0;
